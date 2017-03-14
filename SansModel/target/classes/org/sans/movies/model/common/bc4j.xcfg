@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="org.sans.movies.model.SansAppModule">
+      <AppModuleConfig name="SansAppModuleLocal" ApplicationName="org.sans.movies.model.SansAppModule" DeployPlatform="LOCAL" jbo.project="org.sans.movies.model.SansModel">
+         <Database jbo.sql92.JdbcDriverClass="com.mysql.jdbc.Driver" jbo.TypeMapEntries="Java" jbo.SQLBuilder="SQL92"/>
+         <Security AppModuleJndiName="org.sans.movies.model.SansAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/moviesDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="SansAppModuleShared" ApplicationName="org.sans.movies.model.SansAppModule" DeployPlatform="LOCAL" jbo.project="org.sans.movies.model.SansModel">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.sql92.JdbcDriverClass="com.mysql.jdbc.Driver" jbo.TypeMapEntries="Java" jbo.SQLBuilder="SQL92"/>
+         <Security AppModuleJndiName="org.sans.movies.model.SansAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/moviesDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

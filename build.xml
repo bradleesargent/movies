@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<project xmlns="antlib:org.apache.tools.ant" default="init">
+  <target name="init">
+    <tstamp/>
+  </target>
+  <copy todir="C:/Users/BRADLEE/OneDrive/Documents/Projects/sans">
+    <fileset dir="." />
+  </copy>
+  
+</project>

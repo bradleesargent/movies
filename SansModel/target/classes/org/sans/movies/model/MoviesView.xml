@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="MoviesView"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  SelectListFlags="1"
+  FromListFlags="1"
+  WhereFlags="1"
+  BindingStyle="JDBC"
+  CustomQuery="false"
+  SelectAllAttributes="false"
+  PageIterMode="Full">
+  <EntityUsage
+    Name="Movies"
+    Entity="org.sans.movies.model.Movies"/>
+  <ViewAttribute
+    Name="Title"
+    PrecisionRule="true"
+    EntityAttrName="Title"
+    EntityUsage="Movies"
+    AliasName="title"/>
+  <ViewAttribute
+    Name="Format"
+    PrecisionRule="true"
+    EntityAttrName="Format"
+    EntityUsage="Movies"
+    AliasName="format"/>
+  <ViewAttribute
+    Name="Length"
+    PrecisionRule="true"
+    EntityAttrName="Length"
+    EntityUsage="Movies"
+    AliasName="length"/>
+  <ViewAttribute
+    Name="Releaseyear"
+    PrecisionRule="true"
+    EntityAttrName="Releaseyear"
+    EntityUsage="Movies"
+    AliasName="releaseyear"/>
+  <ViewAttribute
+    Name="Rating"
+    PrecisionRule="true"
+    EntityAttrName="Rating"
+    EntityUsage="Movies"
+    AliasName="rating"/>
+</ViewObject>
