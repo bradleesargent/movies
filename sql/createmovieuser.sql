@@ -1,0 +1,1 @@
+CREATE USER 'movies'@'localhost' IDENTIFIED BY 'movies';
