@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="index.jspx" id="d1" binding="#{backingBeanScope.backing_index.d1}">
+            <af:form id="f1" binding="#{backingBeanScope.backing_index.f1}">
+                <af:panelStretchLayout id="psl1" binding="#{backingBeanScope.backing_index.psl1}">
+                    <f:facet name="bottom"/>
+                    <f:facet name="center"/>
+                    <f:facet name="start"/>
+                    <f:facet name="end"/>
+                    <f:facet name="top">
+                        <af:outputText value="Brad Movie&#160;Manager" id="pt_ot1"
+                                       inlineStyle="font-size:x-large;text-align:center;" styleClass="AFStretchWidth"
+                                       binding="#{backingBeanScope.backing_index.pt_ot1}"/>
+                    </f:facet>
+                </af:panelStretchLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_index-->
+</jsp:root>

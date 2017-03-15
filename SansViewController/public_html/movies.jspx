@@ -8,7 +8,8 @@
                 <af:panelStretchLayout id="psl1" >
                     <f:facet name="bottom"/>
                     <f:facet name="center">
-                        <af:image source="#{resource['images:blu-ray-1.png']}" />
+                        <af:link icon="#{resource['images:blu-ray-1.png']}" id="pt2"
+                                 action="#{backingBeanScope.backing_movies.pt2_action}"/>
                     </f:facet>
                     <f:facet name="start"/>
                     <f:facet name="end"/>

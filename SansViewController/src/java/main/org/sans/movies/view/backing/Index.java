@@ -1,18 +1,15 @@
 package org.sans.movies.view.backing;
 
-import javax.faces.component.html.HtmlOutputText;
-
 import oracle.adf.view.rich.component.rich.RichDocument;
 import oracle.adf.view.rich.component.rich.RichForm;
 import oracle.adf.view.rich.component.rich.layout.RichPanelStretchLayout;
-import oracle.adf.view.rich.component.rich.output.RichImage;
+import oracle.adf.view.rich.component.rich.output.RichOutputText;
 
-public class Movies {
+public class Index {
     private RichForm f1;
     private RichDocument d1;
-    private HtmlOutputText ot1;
     private RichPanelStretchLayout psl1;
-    private RichImage i1;
+    private RichOutputText pt_ot1;
 
     public void setF1(RichForm f1) {
         this.f1 = f1;
@@ -30,15 +27,6 @@ public class Movies {
         return d1;
     }
 
-
-    public void setOt1(HtmlOutputText ot1) {
-        this.ot1 = ot1;
-    }
-
-    public HtmlOutputText getOt1() {
-        return ot1;
-    }
-
     public void setPsl1(RichPanelStretchLayout psl1) {
         this.psl1 = psl1;
     }
@@ -47,16 +35,11 @@ public class Movies {
         return psl1;
     }
 
-    public void setI1(RichImage i1) {
-        this.i1 = i1;
+    public void setPt_ot1(RichOutputText pt_ot1) {
+        this.pt_ot1 = pt_ot1;
     }
 
-    public RichImage getI1() {
-        return i1;
-    }
-
-    public String pt2_action() {
-        // Add event code here...
-        return "success";
+    public RichOutputText getPt_ot1() {
+        return pt_ot1;
     }
 }

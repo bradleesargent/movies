@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <Page
+      id="Page2">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="start">true</property>
+      <property
+         name="y">129.5918</property>
+      <property
+         name="x">268.0088</property>
+      <property
+         name="jspName">/movies.jspx</property>
+   </Page>
+   <Page
+      id="Page3">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">135.59766</property>
+      <property
+         name="x">410.0</property>
+      <property
+         name="jspName">/index.jspx</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase4"
+      from="Page2"
+      to="Page3">
+      <property
+         name="fromOutcome">success</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">R50,309.0088,129.5918,369.0,135.24707,L50</property>
+   </NavigationCase>
+</SDM>
